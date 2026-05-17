@@ -21,6 +21,7 @@ public class Difficulty extends javax.swing.JFrame {
     public Difficulty(Viewable view) {
         this.view = view;
         initComponents();
+        setTitle("Java Sudoku Game - Difficulty");
     }
 private void loadGame(DifficultyEnum level) {
     try {
@@ -170,3 +171,4 @@ private void loadGame(DifficultyEnum level) {
     private javax.swing.JSeparator jSeparator1;
     // End of variables declaration//GEN-END:variables
 }
+

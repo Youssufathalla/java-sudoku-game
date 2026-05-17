@@ -24,6 +24,7 @@ public class StarterFrame extends javax.swing.JFrame {
     public StarterFrame(Viewable view) {
     this.view = view;
     initComponents();
+        setTitle("Java Sudoku Game - Start");
     setupLogic();
 }
     private void setupLogic() {
@@ -171,3 +172,4 @@ public class StarterFrame extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     // End of variables declaration//GEN-END:variables
 }
+

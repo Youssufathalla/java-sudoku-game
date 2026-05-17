@@ -22,6 +22,7 @@ public class PathFrame extends javax.swing.JFrame {
     public PathFrame(Viewable view) {
         this.view = view;
         initComponents();
+        setTitle("Java Sudoku Game - Load Board");
     }
 
     /**
@@ -166,3 +167,4 @@ public class PathFrame extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     // End of variables declaration//GEN-END:variables
 }
+

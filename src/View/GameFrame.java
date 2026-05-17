@@ -27,6 +27,7 @@ public class GameFrame extends javax.swing.JFrame {
         this.view = view;
         this.game = game;
         initComponents();
+        setTitle("Java Sudoku Game - Board");
         loadBoardToTable();
         attachTableListener();
     }
@@ -301,3 +302,4 @@ private int countEmptyCells() {
     private javax.swing.JSeparator jSeparator1;
     // End of variables declaration//GEN-END:variables
 }
+
