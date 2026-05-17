@@ -1,23 +1,24 @@
 # Java Sudoku Game
 
-A Java-based Sudoku desktop game built using Java Swing and object-oriented programming. The project includes difficulty selection, board loading, game validation, save/load functionality, and a structured Model-View-Controller style architecture.
+A Java-based Sudoku desktop game built using Java Swing and object-oriented programming. The project includes difficulty selection, Sudoku board loading, puzzle interaction, solver support, solution verification, and a structured Model-View-Controller style architecture.
 
 ## Project Overview
 
 This project was developed to practice Java software design, GUI development, file handling, and algorithmic problem solving through a complete Sudoku game application.
 
-The application allows users to choose a difficulty level, load Sudoku boards, interact with the puzzle through a graphical interface, validate entries, and manage game state.
+The application allows users to start a new Sudoku game, choose a difficulty level, interact with a Sudoku board, use solver functionality, and verify whether the current board solution is correct.
 
 ## Features
 
 - Java Swing desktop interface
-- Difficulty selection
-- Easy, medium, and hard Sudoku boards
-- CSV-based Sudoku board loading
-- Sudoku board validation
-- Duplicate checking for rows, columns, and boxes
-- Game state handling
-- Save/load support
+- New game and current game options
+- Difficulty selection: Easy, Medium, and Hard
+- Sudoku board loading from CSV files
+- Interactive Sudoku grid
+- Solver functionality for missing cells
+- Solution verification
+- Correct and incorrect solution feedback
+- Undo functionality
 - Structured Model, View, and Controller packages
 - Object-oriented design using multiple classes and responsibilities
 
@@ -46,6 +47,7 @@ java-sudoku-game/
 ├── medium/                Medium Sudoku board files
 ├── hard/                  Hard Sudoku board files
 │
+├── screenshots/           Application screenshots
 ├── nbproject/             NetBeans project configuration
 ├── build.xml              Ant build configuration
 ├── manifest.mf            Manifest file
@@ -68,20 +70,47 @@ The `Model` package contains the core Sudoku logic, including:
 - Duplicate detection
 - Difficulty handling
 - Board loading
+- Solver and verifier logic
 
 ### View
 
 The `View` package contains the Java Swing screens used by the player, including:
 
 - Start screen
-- Difficulty selection
-- Game frame
-- File/path selection interface
+- Difficulty selection screen
+- Sudoku game board
 - User action handling
+- Validation feedback dialogs
 
 ### Controller
 
 The `Controller` package connects the interface with the game logic and manages the flow of the application.
+
+## Screenshots
+
+### Start Screen
+
+![Start Screen](screenshots/start-screen.png)
+
+### Difficulty Selection
+
+![Difficulty Selection](screenshots/difficulty-selection.png)
+
+### Game Board
+
+![Game Board](screenshots/game-board.png)
+
+### Solver Result
+
+![Solver Result](screenshots/solver.png)
+
+### Correct Validation Result
+
+![Correct Validation Result](screenshots/Validation-result-correct.png)
+
+### Incorrect Validation Result
+
+![Incorrect Validation Result](screenshots/validation-result-incorrect.png)
 
 ## How to Run the Project
 
@@ -131,6 +160,16 @@ Then run:
 java -jar dist/java-sudoku-game.jar
 ```
 
+## How to Use
+
+1. Start the application.
+2. Click `New Game`.
+3. Select a difficulty level: Easy, Medium, or Hard.
+4. Fill in the missing Sudoku cells.
+5. Use `Solver` to check if a solution exists for the missing cells.
+6. Use `Verify` to check whether the current board is solved correctly.
+7. Use `Undo` to reverse the last move if needed.
+
 ## What I Learned
 
 - Building a complete Java desktop application
@@ -140,6 +179,7 @@ java -jar dist/java-sudoku-game.jar
 - Reading and processing CSV files
 - Implementing Sudoku validation logic
 - Managing game state
+- Handling user actions through a graphical interface
 - Cleaning and publishing a Java project professionally on GitHub
 
 ## Future Improvements
